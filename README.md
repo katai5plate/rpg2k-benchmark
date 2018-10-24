@@ -1,6 +1,11 @@
 # rpg2k-benchmark
 対象の環境でツクール2000製ゲームの起動ができて操作も難なくできるかどうかを調べる
 
+```
+git clone https://github.com/katai5plate/rpg2k-benchmark && cd rpg2k-benchmark
+RUN.bat
+```
+
 ## 操作と検証
 1. RUN.batを起動して、ウィンドウモードで起動するかどうか
 2. eと出たときにEnterで次へ遷移するかどうか
