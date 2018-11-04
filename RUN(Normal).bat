@@ -1,0 +1,1 @@
+start bin/RPG_RT.exe TestPlay NULL Window
