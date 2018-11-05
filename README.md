@@ -15,6 +15,15 @@ RUN(SingleCore).bat
 - `RUN(Normal).bat` を起動。ウィンドウが表示され、`start`に矢印キーでカーソルを合わせEnterでき、その後`ok`の表示が出るまで画面指示に沿って操作できれば正常。
 - 起動できない、または正常動作しない場合は`RUN(SingleCore)`を試す。
 
+## 追加検証
+- `操作と検証`がウィンドウモードでのみ成功し、フルスクリーンが失敗する場合、以下を試す。
+1. `RPG_RT.exe`のプロパティを開き、互換モードを`Windows7`に設定し`RPG_RT.exe`を直接実行・検証->`RUN(SingleCoreFS).bat`を直接実行・検証
+2. `RPG_RT.exe`のプロパティを開き、互換性設定から`640x480の解像度で実行する`に設定し`RPG_RT.exe`を直接実行・検証->`RUN(SingleCoreFS).bat`を直接実行・検証
+3. `コントロールパネル`->`プログラムと機能`->`Windowsの機能の有効化または無効化`->`レガシ コンポーネント`->`DirectPlay`にチェックをつけて、`RPG_RT.exe`を直接実行・検証->`RUN(SingleCoreFS).bat`を直接実行・検証
+4. `+DLL`ディレクトリに入っている`winmm.dll`を`bin`ディレクトリにコピーし`RPG_RT.exe`を直接実行・検証->`RUN(SingleCoreFS).bat`を直接実行・検証
+5. `+DLL`ディレクトリに入っている`wined3d`ディレクトリの中身を`bin`ディレクトリにコピーし`RPG_RT.exe`を直接実行・検証->`RUN(SingleCoreFS).bat`を直接実行・検証
+6. `bin`ディレクトリから`winmm.dll`を削除し`RPG_RT.exe`を直接実行・検証->`RUN(SingleCoreFS).bat`を直接実行・検証
+
 ## 知見
 ### RPG_RT CommandLine Params
 ```
