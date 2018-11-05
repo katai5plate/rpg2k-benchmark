@@ -23,6 +23,8 @@ RUN(SingleCore).bat
 4. `+DLL`ディレクトリに入っている`winmm.dll`を`bin`ディレクトリにコピーし`RPG_RT.exe`を直接実行・検証->`RUN(SingleCoreFS).bat`を直接実行・検証
 5. `+DLL`ディレクトリに入っている`wined3d`ディレクトリの中身を`bin`ディレクトリにコピーし`RPG_RT.exe`を直接実行・検証->`RUN(SingleCoreFS).bat`を直接実行・検証
 6. `bin`ディレクトリから`winmm.dll`を削除し`RPG_RT.exe`を直接実行・検証->`RUN(SingleCoreFS).bat`を直接実行・検証
+- 上記検証でフルスクリーン起動自体に成功した場合、以下も確認する
+1. `RPG_RT.exe`・`RUN(SingleCoreFS).bat`を実行してすぐの画面で、グレーの背景が点滅していたら異常、そうでなければ正常
 
 ## 知見
 ### RPG_RT CommandLine Params
