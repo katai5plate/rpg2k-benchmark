@@ -4,11 +4,17 @@
 ```
 git clone https://github.com/katai5plate/rpg2k-benchmark && cd rpg2k-benchmark
 ```
+- 通常起動
 ```
 RUN(Normal).bat
 ```
+- シングルコア
 ```
 RUN(SingleCore).bat
+```
+- 背景ウィンドウつきシングルコア
+```
+RUN(SingleCoreBB).bat
 ```
 
 ## 操作と検証

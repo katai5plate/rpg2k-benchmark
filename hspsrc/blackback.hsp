@@ -1,0 +1,6 @@
+bgscr 0,(ginfo_dispx/2)-320,ginfo_dispy,0,0,0:boxf
+objsize 16,16:button goto "X", *a
+bgscr 1,(ginfo_dispx/2)-320,ginfo_dispy,0,(ginfo_dispx/2)+320,0:boxf
+stop
+*a
+	end
